@@ -7,7 +7,7 @@ This client is compatible with the official postgresql image, which means that i
 ### Create a postgres database
 
 ```
-docker run -e POSTGRES_HOST=host POSTGRES_USER=user -e POSTGRES_PASS=pwd -d --name=postgresql-client "CREATE DATABASE mydb;"
+docker run -e DB_HOST=host DB_USER=user -e DB_PASS=pwd -d --name=postgresql-client "CREATE DATABASE mydb;"
 ```
 
 ### Use psql or pg_dump command
